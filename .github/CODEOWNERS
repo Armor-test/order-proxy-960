@@ -1,0 +1,38 @@
+# CODEOWNERS file for order-proxy-960
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-cloud @Armor-test/unit-design @Armor-test/squad-payments
+
+# Directory ownership
+/third_party/ @Armor-test/dept-test @Armor-test/dept-security
+/controllers/ @Armor-test/team-research @Armor-test/dept-data @Armor-test/unit-test
+/config/ @Armor-test/unit-devops @Armor-test/dept-logging @Armor-test/dept-security
+/spec/ @Armor-test/unit-devops @Armor-test/dept-security @Armor-test/unit-cloud
+/hooks/ @Armor-test/dept-release @Armor-test/unit-devops
+/db/ @Armor-test/unit-cloud @Armor-test/team-notifications @Armor-test/squad-payments
+/data/ @Armor-test/unit-governance @Armor-test/dept-notifications
+/auth/ @Armor-test/team-security @Armor-test/squad-search @Armor-test/dept-data
+/pkg/ @Armor-test/team-notifications @Armor-test/dept-security
+/scripts/ @Armor-test/squad-payments @Armor-test/squad-api
+/build/ @Armor-test/team-governance @Armor-test/dept-release
+/modules/ @Armor-test/dept-data @Armor-test/grp-reporting
+/helpers/ @Armor-test/team-research @Armor-test/dept-api
+/services/ @Armor-test/team-notifications @Armor-test/grp-payments @Armor-test/dept-reporting
+
+# File type ownership
+*.properties @Armor-test/dept-billing @Armor-test/dept-data @Armor-test/squad-tooling
+*.gradle @Armor-test/squad-tooling @Armor-test/dept-security @Armor-test/dept-api
+*.config @Armor-test/grp-search @Armor-test/team-reporting @Armor-test/team-research
+*.sql @Armor-test/grp-integration @Armor-test/dept-test @Armor-test/dept-automation
+*.md @Armor-test/unit-cloud @Armor-test/grp-search @Armor-test/dept-automation
+*.yaml @Armor-test/dept-test @Armor-test/unit-test
+*.json @Armor-test/squad-payments @Armor-test/team-security
+*.cs @Armor-test/team-logging @Armor-test/grp-search @Armor-test/dept-billing
+*.h @Armor-test/grp-storage @Armor-test/team-notifications
+*.cpp @Armor-test/team-security @Armor-test/squad-qa @Armor-test/grp-ui
+*.toml @Armor-test/squad-api @Armor-test/squad-payments @Armor-test/unit-cloud
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
